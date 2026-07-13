@@ -3,9 +3,9 @@ import { Category } from "./types";
 export const categories: Category[] = [
   {
     id: 1,
-    name: "Katun",
+    name: "Polyester",
     description: "Nyaman untuk pakaian sehari-hari",
-    image: "/images/categories/cotton.jpg",
+    image: "/images/categories/polyester.webp",
     totalProducts: 48,
   },
   {
