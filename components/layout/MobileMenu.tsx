@@ -14,7 +14,7 @@ import { NAVIGATION } from "@/constants/navigation";
 export default function MobileMenu() {
   return (
     <Sheet>
-      <SheetTrigger asChild>
+      <SheetTrigger>
         <button className="rounded-xl p-2 hover:bg-gray-100 lg:hidden">
           <Menu />
         </button>
