@@ -67,7 +67,7 @@ export default function AboutContent() {
       </div>
 
       <Link
-        href="https://wa.me/628123456789"
+        href="https://wa.me/6281953437411"
         className="mt-12 inline-flex rounded-full bg-[#17324D] px-8 py-4 font-semibold text-white"
       >
         Konsultasi Gratis
