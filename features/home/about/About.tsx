@@ -3,11 +3,15 @@ import AboutImage from "./AboutImage";
 
 export default function About() {
   return (
-    <section className="bg-[#FAF8F4] py-28">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-20 px-6 lg:flex-row">
-        <AboutImage />
+    <section className="bg-[#FAF8F4] py-20 overflow-hidden">
+      <div className="mx-auto flex max-w-7xl flex-col gap-16 px-6 sm:px-8 lg:flex-row lg:gap-20">
+        <div className="w-full min-w-0 lg:w-1/2">
+          <AboutImage />
+        </div>
 
-        <AboutContent />
+        <div className="w-full min-w-0 lg:w-1/2">
+          <AboutContent />
+        </div>
       </div>
     </section>
   );

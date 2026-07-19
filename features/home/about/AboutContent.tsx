@@ -11,7 +11,7 @@ const advantages = [
 
 export default function AboutContent() {
   return (
-    <div className="max-w-xl">
+    <div className="max-w-xl py-6 lg:px-0">
       <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
         About Me
       </span>
@@ -24,7 +24,7 @@ export default function AboutContent() {
         {about.role}
       </p>
 
-      <p className="mt-8 leading-8 text-gray-600">
+      <p className="mt-8 leading-8 text-sm lg:text-lg text-gray-600">
         {about.description}
       </p>
 
@@ -46,7 +46,7 @@ export default function AboutContent() {
 
       <div className="mt-12 flex gap-6">
         <div>
-          <h3 className="text-3xl font-bold text-[#17324D]">
+          <h3 className="text-sm lg:text-3xl font-bold text-[#17324D]">
             {about.customers}
           </h3>
 
@@ -56,7 +56,7 @@ export default function AboutContent() {
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-[#17324D]">
+          <h3 className="text-sm lg:text-3xl font-bold text-[#17324D]">
             {about.experience}
           </h3>
 
