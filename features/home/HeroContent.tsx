@@ -27,7 +27,7 @@ export default function HeroContent() {
         </Link>
 
         <Link
-          href="https://wa.me/628123456789"
+          href="https://wa.me/6281953437411"
           target="_blank"
           className="rounded-full border border-[#17324D] px-8 py-4 text-center font-semibold text-[#17324D] transition hover:bg-[#17324D] hover:text-white"
         >

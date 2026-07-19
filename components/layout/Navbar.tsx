@@ -41,7 +41,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <Link
-            href="https://wa.me/628123456789"
+            href="https://wa.me/6281953437411"
             target="_blank"
             className="hidden rounded-full bg-[#17324D] px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 hover:bg-[#22486c] lg:block"
           >
