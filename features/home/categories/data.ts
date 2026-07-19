@@ -24,9 +24,9 @@ export const categories: Category[] = [
   },
   {
     id: 4,
-    name: "Denim",
-    description: "Kuat dan stylish",
-    image: "/images/categories/denim.jpg",
+    name: "Cotton",
+    description: "Lembut dan nyaman",
+    image: "/images/categories/cotton.jpg",
     totalProducts: 18,
   },
   {
@@ -38,9 +38,9 @@ export const categories: Category[] = [
   },
   {
     id: 6,
-    name: "Batik",
-    description: "Motif khas Indonesia",
-    image: "/images/categories/batik.jpg",
+    name: "Denim",
+    description: "Kuat dan tahan lama",
+    image: "/images/categories/denim.jpg",
     totalProducts: 22,
   },
 ];

@@ -12,20 +12,20 @@ export const NAVIGATION: NavigationItem[] = [
     label: "Katalog",
     href: "/katalog",
   },
-  {
-    label: "Portfolio",
-    href: "/portfolio",
-  },
-  {
-    label: "Artikel",
-    href: "/artikel",
-  },
-  {
-    label: "Tentang",
-    href: "/tentang",
-  },
-  {
-    label: "Kontak",
-    href: "/kontak",
-  },
+  // {
+  //   label: "Portfolio",
+  //   href: "/portfolio",
+  // },
+  // {
+  //   label: "Artikel",
+  //   href: "/artikel",
+  // },
+  // {
+  //   label: "Tentang",
+  //   href: "/tentang",
+  // },
+  // {
+  //   label: "Kontak",
+  //   href: "/kontak",
+  // },
 ];

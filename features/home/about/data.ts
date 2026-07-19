@@ -11,5 +11,5 @@ export const about = {
 
   city: "Jakarta, Indonesia",
 
-  image: "/images/profile/profile.jpg",
+  image: "/images/profile/profile.webp",
 };

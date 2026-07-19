@@ -1,15 +1,18 @@
+import Image from "next/image";
+
 export default function HeroImage() {
   return (
-    <div className="flex h-[650px] w-full max-w-lg items-center justify-center rounded-[40px] bg-gradient-to-br from-[#17324D] to-[#C8A96A] text-center text-white shadow-2xl">
-      <div>
-        <h2 className="text-3xl font-bold">
-          Premium Fabric
-        </h2>
+    <div className="relative h-[650px] w-full max-w-lg overflow-hidden rounded-[40px] shadow-2xl">
+      <Image
+        src="/images/hero/fabrica-hero.webp"
+        alt="Premium Fabric Collection"
+        fill
+        priority
+        className="object-cover"
+      />
 
-        <p className="mt-4 opacity-80">
-          Product Image Coming Soon
-        </p>
-      </div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
     </div>
   );
 }

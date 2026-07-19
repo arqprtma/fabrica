@@ -31,14 +31,14 @@ export default function Gallery() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <Link
             href="/gallery"
             className="rounded-full border px-8 py-4 font-semibold"
           >
             View All Gallery
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
