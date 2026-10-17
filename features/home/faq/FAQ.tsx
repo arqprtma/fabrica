@@ -9,27 +9,29 @@ import { faqs } from "./data";
 
 export default function FAQ() {
   return (
-    <section className="bg-[#FAF8F4] py-28">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2">
-        <div>
-          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
-            FAQ
+    <section className="bg-[#FAF8F4] py-20 sm:py-28">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:gap-16">
+        <div className="max-w-lg">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+            Pertanyaan umum
           </span>
 
-          <h2 className="mt-4 text-5xl font-bold text-[#17324D]">
-            Frequently Asked Questions
+          <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+            Sebelum memilih kain.
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-gray-500">
-            Masih ada pertanyaan? Berikut beberapa pertanyaan yang paling sering
-            diajukan oleh pelanggan kami.
+          <p className="mt-5 leading-7 text-gray-600">
+            Butuh detail harga, varian, atau ketersediaan? Tanyakan langsung
+            kepada Vichra agar informasinya sesuai kondisi terbaru.
           </p>
 
           <a
-            href="https://wa.me/6281953437411"
-            className="mt-10 inline-flex rounded-full bg-[#17324D] px-8 py-4 text-white font-semibold"
+            href="https://wa.me/6281953437411?text=Halo%20Vichra%2C%20saya%20punya%20pertanyaan%20tentang%20kain."
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 inline-flex rounded-full bg-[#17324D] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#22486c]"
           >
-            Hubungi Kami
+            Tanya lewat WhatsApp
           </a>
         </div>
 

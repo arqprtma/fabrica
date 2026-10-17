@@ -8,10 +8,20 @@ import ProductGrid from "./components/ProductGrid";
 import SortDropdown from "./components/SortDropdown";
 import EmptyState from "./components/EmptyState";
 
-export default function CatalogPage() {
+interface CatalogPageProps {
+  initialCategory?: string;
+}
+
+export default function CatalogPage({
+  initialCategory = "All",
+}: CatalogPageProps) {
   const [sortBy, setSortBy] = useState("newest");
   const [searchValue, setSearchValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState(() =>
+    products.some((product) => product.category === initialCategory)
+      ? initialCategory
+      : "All",
+  );
 
   const categories = useMemo(() => {
     return ["All", ...new Set(products.map((product) => product.category))];
@@ -50,19 +60,19 @@ export default function CatalogPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#F7F8FA] py-24">
+      <section className="bg-[#FAF8F4] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <span className="font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
-            Collection
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+            Vichra · allmakind
           </span>
 
-          <h1 className="mt-6 text-5xl font-bold text-[#17324D]">
-            Premium Fabric Collection
+          <h1 className="mt-5 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+            Koleksi kain pilihan
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-500">
-            Temukan berbagai pilihan kain berkualitas tinggi untuk kebutuhan
-            fashion, konveksi, interior, maupun bisnis Anda.
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600">
+            Jelajahi polyester, katun, dan rayon. Hubungi Vichra untuk
+            menanyakan detail varian, harga, dan ketersediaan terbaru.
           </p>
         </div>
       </section>

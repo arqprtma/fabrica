@@ -3,28 +3,27 @@ import { CheckCircle2 } from "lucide-react";
 import { about } from "./data";
 
 const advantages = [
-  "Premium Quality Fabric",
-  "Competitive Price",
-  "Fast Response",
-  "Nationwide Shipping",
+  "Fokus pada polyester, katun, dan rayon",
+  "Diskusi kebutuhan langsung bersama Vichra",
+  "Bantuan memilih bahan untuk rencana produksi",
 ];
 
 export default function AboutContent() {
   return (
     <div className="max-w-xl py-6 lg:px-0">
-      <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
-        About Me
+      <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+        Kenalan dengan sales Anda
       </span>
 
-      <h2 className="mt-4 text-5xl font-bold text-[#17324D]">
-        Hi, I&lsquo;m {about.name}
+      <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+        Halo, saya {about.name}.
       </h2>
 
-      <p className="mt-3 text-xl font-medium text-gray-500">
+      <p className="mt-3 text-base font-medium text-[#9C7B43] sm:text-lg">
         {about.role}
       </p>
 
-      <p className="mt-8 leading-8 text-sm lg:text-lg text-gray-600">
+      <p className="mt-7 text-base leading-8 text-gray-600">
         {about.description}
       </p>
 
@@ -34,43 +33,20 @@ export default function AboutContent() {
             key={item}
             className="flex items-center gap-3"
           >
-            <CheckCircle2
-              className="text-green-600"
-              size={22}
-            />
+            <CheckCircle2 className="shrink-0 text-[#9C7B43]" size={20} />
 
-            <span>{item}</span>
+            <span className="text-sm text-gray-700 sm:text-base">{item}</span>
           </div>
         ))}
       </div>
 
-      <div className="mt-12 flex gap-6">
-        <div>
-          <h3 className="text-sm lg:text-3xl font-bold text-[#17324D]">
-            {about.customers}
-          </h3>
-
-          <p className="text-gray-500">
-            Happy Customers
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-sm lg:text-3xl font-bold text-[#17324D]">
-            {about.experience}
-          </h3>
-
-          <p className="text-gray-500">
-            Experience
-          </p>
-        </div>
-      </div>
-
       <Link
-        href="https://wa.me/6281953437411"
-        className="mt-12 inline-flex rounded-full bg-[#17324D] px-8 py-4 font-semibold text-white"
+        href="https://wa.me/6281953437411?text=Halo%20Vichra%2C%20saya%20ingin%20bertanya%20tentang%20kain."
+        target="_blank"
+        rel="noreferrer"
+        className="mt-10 inline-flex rounded-full bg-[#17324D] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#22486c]"
       >
-        Konsultasi Gratis
+        Kenalan lewat WhatsApp
       </Link>
     </div>
   );

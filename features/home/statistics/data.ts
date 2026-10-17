@@ -6,23 +6,23 @@ export interface Statistic {
 
 export const statistics: Statistic[] = [
   {
-    title: "Happy Customers",
-    value: "1000+",
-    description: "Pelanggan dari seluruh Indonesia",
+    title: "Kategori pilihan",
+    value: "03",
+    description: "Polyester, katun, dan rayon",
   },
   {
-    title: "Fabric Collections",
-    value: "250+",
-    description: "Berbagai jenis kain premium",
+    title: "Pendampingan",
+    value: "1:1",
+    description: "Diskusikan kebutuhan kain secara langsung",
   },
   {
-    title: "Years Experience",
-    value: "15+",
-    description: "Berpengalaman di industri tekstil",
+    title: "Brand",
+    value: "allmakind",
+    description: "Sales tekstil bersama Vichra",
   },
-  {
-    title: "Repeat Order",
-    value: "98%",
-    description: "Mayoritas pelanggan kembali membeli",
-  },
+  // {
+  //   title: "Fokus",
+  //   value: "Anda",
+  //   description: "Pilihan bahan menyesuaikan kebutuhan koleksi",
+  // },
 ];

@@ -4,34 +4,47 @@ import HeroStats from "./HeroStats";
 export default function HeroContent() {
   return (
     <div className="max-w-2xl">
-      <span className="inline-flex rounded-full bg-[#C8A96A]/10 px-4 py-2 text-sm font-semibold text-[#17324D]">
-        Premium Fabric Supplier
+      <span className="inline-flex items-center gap-2 rounded-full border border-[#C8A96A]/40 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#17324D]">
+        <span className="h-2 w-2 rounded-full bg-[#C8A96A]" />
+        Sales tekstil · allmakind
       </span>
 
-      <h1 className="mt-6 text-5xl font-bold leading-tight text-[#17324D] lg:text-7xl">
-        Premium Fabrics for Your Fashion Business
+      <h1 className="mt-7 max-w-2xl font-heading text-5xl font-medium leading-[1.08] tracking-[-0.04em] text-[#17324D] sm:text-6xl lg:text-7xl">
+        Kain pilihan untuk cerita brand Anda.
       </h1>
 
-      <p className="mt-6 text-lg leading-8 text-gray-600">
-        Helping boutiques, garment factories, fashion designers,
-        and tailors find premium-quality fabrics with trusted
-        service and competitive prices.
+      <p className="mt-6 max-w-xl text-base leading-8 text-gray-600 sm:text-lg">
+        Kenali pilihan polyester, katun, dan rayon bersama Vichra — sales
+        tekstil allmakind yang siap membantu Anda mencocokkan bahan dengan
+        kebutuhan koleksi maupun produksi.
       </p>
 
-      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+      <div className="mt-8 flex flex-wrap gap-2">
+        {["Polyester", "Katun", "Rayon"].map((fabric) => (
+          <span
+            key={fabric}
+            className="rounded-full border border-[#17324D]/10 bg-white/70 px-4 py-2 text-sm font-medium text-[#17324D]"
+          >
+            {fabric}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-9 flex flex-col gap-3 sm:flex-row">
         <Link
-          href="/katalog"
-          className="rounded-full bg-[#17324D] px-8 py-4 text-center font-semibold text-white transition hover:scale-105"
+          href="https://wa.me/6281953437411?text=Halo%20Vichra%2C%20saya%20ingin%20konsultasi%20pilihan%20kain."
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-full bg-[#17324D] px-7 py-4 text-center text-sm font-semibold text-white shadow-lg shadow-[#17324D]/15 transition hover:-translate-y-0.5 hover:bg-[#22486c]"
         >
-          Explore Collection
+          Konsultasi via WhatsApp
         </Link>
 
         <Link
-          href="https://wa.me/6281953437411"
-          target="_blank"
-          className="rounded-full border border-[#17324D] px-8 py-4 text-center font-semibold text-[#17324D] transition hover:bg-[#17324D] hover:text-white"
+          href="/katalog"
+          className="rounded-full border border-[#17324D]/20 bg-white/60 px-7 py-4 text-center text-sm font-semibold text-[#17324D] transition hover:border-[#17324D] hover:bg-white"
         >
-          Chat WhatsApp
+          Jelajahi koleksi
         </Link>
       </div>
 

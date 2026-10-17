@@ -2,33 +2,23 @@ import { FAQItem } from "./types";
 
 export const faqs: FAQItem[] = [
   {
-    question: "Apakah bisa membeli secara eceran?",
+    question: "Bagaimana cara memilih jenis kain?",
     answer:
-      "Ya. Kami melayani pembelian eceran maupun grosir sesuai kebutuhan pelanggan.",
+      "Ceritakan jenis produk, kenyamanan, dan tampilan yang Anda inginkan. Vichra dapat membantu membandingkan karakter polyester, katun, dan rayon.",
   },
   {
-    question: "Berapa minimal pembelian?",
+    question: "Bagaimana cara mengetahui harga dan ketersediaan?",
     answer:
-      "Tidak ada minimal pembelian untuk beberapa jenis kain. Untuk harga grosir berlaku ketentuan tertentu.",
+      "Harga dan ketersediaan dapat berbeda menurut bahan dan varian. Hubungi Vichra melalui WhatsApp untuk informasi terbaru.",
   },
   {
-    question: "Apakah melayani pengiriman ke seluruh Indonesia?",
+    question: "Bagaimana cara memesan?",
     answer:
-      "Ya, kami bekerja sama dengan berbagai ekspedisi untuk pengiriman ke seluruh Indonesia.",
+      "Pilih kategori yang menarik, lalu kirim pesan ke Vichra. Detail bahan, jumlah, harga, dan pengiriman bisa didiskusikan sebelum konfirmasi.",
   },
   {
-    question: "Apakah bisa request sampel kain?",
+    question: "Apakah saya bisa bertanya sebelum memesan?",
     answer:
-      "Bisa. Silakan hubungi kami untuk mengetahui syarat dan ketentuan pengiriman sampel.",
-  },
-  {
-    question: "Metode pembayaran apa saja yang tersedia?",
-    answer:
-      "Kami menerima transfer bank, QRIS, dan metode pembayaran lain sesuai kesepakatan.",
-  },
-  {
-    question: "Berapa lama proses pengiriman?",
-    answer:
-      "Pesanan yang ready stock biasanya diproses dalam 1×24 jam setelah pembayaran dikonfirmasi.",
+      "Tentu. Gunakan tombol WhatsApp untuk bertanya tentang pilihan bahan, varian, stok, atau kebutuhan produksi Anda.",
   },
 ];

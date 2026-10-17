@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEE7D8"/>
+      <stop offset=".52" stop-color="#D8CBB4"/>
+      <stop offset="1" stop-color="#B8A88E"/>
+    </linearGradient>
+    <linearGradient id="warp" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF6" stop-opacity=".78"/>
+      <stop offset=".46" stop-color="#C5B69D" stop-opacity=".14"/>
+      <stop offset=".72" stop-color="#FFFDF6" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#8D7C63" stop-opacity=".16"/>
+    </linearGradient>
+    <pattern id="weave" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M0 5h48M0 29h48" stroke="#8F8069" stroke-opacity=".18" stroke-width="12"/>
+      <path d="M8 0v48M32 0v48" stroke="#FFFDF6" stroke-opacity=".42" stroke-width="12"/>
+      <path d="M0 5h48M0 29h48" stroke="url(#warp)" stroke-width="8"/>
+      <path d="M8 0v48M32 0v48" stroke="#B1A188" stroke-opacity=".34" stroke-width="7"/>
+    </pattern>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 .5 0 0 0 0 .46 0 0 0 0 .38 0 0 0 .12 0"/>
+    </filter>
+  </defs>
+  <path fill="url(#base)" d="M0 0h1200v900H0z"/>
+  <path fill="url(#weave)" d="M0 0h1200v900H0z"/>
+  <path fill="#FFF" fill-opacity=".16" filter="url(#grain)" d="M0 0h1200v900H0z"/>
+  <path d="M-60 680C180 530 315 620 520 470s390-195 740-105v620H-60z" fill="#7F715E" fill-opacity=".12"/>
+  <path d="M-30 696C205 550 343 640 542 495s405-196 708-111" stroke="#FFFDF6" stroke-opacity=".28" stroke-width="16"/>
+</svg>

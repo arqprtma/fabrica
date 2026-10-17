@@ -15,13 +15,28 @@ const poppins = Poppins({
   display: "swap",
 });
 
+const siteTitle = "Vichra | Sales Tekstil allmakind";
+const siteDescription =
+  "Temukan pilihan kain polyester, katun, dan rayon bersama Vichra, sales tekstil dari allmakind.";
+
 export const metadata: Metadata = {
   title: {
-    default: "Fabrica",
-    template: "%s | Fabrica",
+    default: siteTitle,
+    template: "%s | Vichra",
   },
-  description:
-    "Premium Fabric Sales - Helping boutiques, fashion brands, and garment businesses find high-quality fabrics.",
+  description: siteDescription,
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    siteName: "Vichra by allmakind",
+    title: siteTitle,
+    description: siteDescription,
+  },
+  twitter: {
+    card: "summary",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Ruler, PackageCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Product } from "../types";
 
@@ -19,6 +19,7 @@ export default function ProductCard({
           src={product.image[0]}
           alt={product.name}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           className="object-cover transition duration-500 group-hover:scale-110"
         />
 
@@ -39,34 +40,13 @@ export default function ProductCard({
           </p>
         </div>
 
-        <div className="space-y-2 text-sm text-gray-600">
-          <div className="flex items-center gap-2">
-            <PackageCheck size={18} />
-            <span>{product.composition}</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Ruler size={18} />
-            <span>{product.width}</span>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between pt-2">
-          <span
-            className={`rounded-full px-3 py-1 text-xs font-semibold ${
-              product.stock === "Ready Stock"
-                ? "bg-green-100 text-green-700"
-                : "bg-orange-100 text-orange-700"
-            }`}
-          >
-            {product.stock}
-          </span>
-
+        <div className="flex items-center justify-between border-t border-[#17324D]/10 pt-4">
+          <span className="text-xs text-gray-500">Tanya varian & ketersediaan</span>
           <Link
             href={`/katalog/${product.slug}`}
-            className="flex items-center gap-2 font-medium text-[#17324D] transition group-hover:gap-3"
+            className="flex items-center gap-2 text-sm font-semibold text-[#17324D] transition group-hover:gap-3"
           >
-            Detail
+            Selengkapnya
             <ArrowRight size={18} />
           </Link>
         </div>

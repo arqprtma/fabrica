@@ -8,8 +8,9 @@ export default function AboutImage() {
       <div className="relative aspect-[3/4] overflow-hidden rounded-[32px] shadow-xl">
         <Image
           src={about.image}
-          alt={about.name}
+          alt="Close-up tekstur kain katun"
           fill
+          sizes="(max-width: 1024px) 100vw, 384px"
           className="object-cover"
         />
       </div>

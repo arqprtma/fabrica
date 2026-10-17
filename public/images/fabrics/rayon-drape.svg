@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="base" x1="135" y1="0" x2="1080" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9B5A2"/>
+      <stop offset=".45" stop-color="#8C7566"/>
+      <stop offset="1" stop-color="#473B37"/>
+    </linearGradient>
+    <linearGradient id="fold1" x1="110" y1="80" x2="520" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2E2D1" stop-opacity=".82"/>
+      <stop offset=".34" stop-color="#C9AE99" stop-opacity=".58"/>
+      <stop offset=".69" stop-color="#755F55" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#E8D7C5" stop-opacity=".64"/>
+    </linearGradient>
+    <linearGradient id="fold2" x1="600" y1="0" x2="750" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAD8C7" stop-opacity=".84"/>
+      <stop offset=".4" stop-color="#65534B" stop-opacity=".56"/>
+      <stop offset=".72" stop-color="#D7C0AD" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#453A36" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F1" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#FFF9F1" stop-opacity=".23"/>
+      <stop offset=".5" stop-color="#FFF9F1" stop-opacity="0"/>
+      <stop offset=".78" stop-color="#FFF9F1" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#FFF9F1" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="fibers" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M2 0v16M10 0v16" stroke="#FFF8EF" stroke-opacity=".12" stroke-width="1"/>
+      <path d="M6 0v16M14 0v16" stroke="#302925" stroke-opacity=".1" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <path fill="url(#base)" d="M0 0h1200v900H0z"/>
+  <path d="M-80 0h370c-20 170 75 265 25 420-46 142 15 314 89 480H-80z" fill="url(#fold1)"/>
+  <path d="M290 0h275c-56 174 40 276-18 430-51 137 37 302 115 470H404c-48-189-138-331-91-495C361 239 276 155 290 0Z" fill="#493C38" fill-opacity=".62"/>
+  <path d="M567 0h260c-6 143 123 256 40 422-69 138 28 304 127 478H662c-57-190-147-341-88-501C638 235 534 150 567 0Z" fill="url(#fold2)"/>
+  <path d="M827 0h455v900h-288c-61-176-155-336-96-490 71-185-78-267-71-410Z" fill="#D4BDAA" fill-opacity=".6"/>
+  <path fill="url(#sheen)" d="M0 0h1200v900H0z"/>
+  <path fill="url(#fibers)" d="M0 0h1200v900H0z"/>
+  <path d="M289 18c13 132 78 195 41 347-45 186 58 356 108 503M566 15c-11 153 84 229 34 391-51 164 43 334 102 479M826 10c18 149 111 236 50 400-64 171 40 334 94 479" stroke="#FFF8EF" stroke-opacity=".32" stroke-width="8"/>
+</svg>

@@ -1,25 +1,36 @@
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import GalleryCard from "./GalleryCard";
 import { gallery } from "./data";
 
 export default function Gallery() {
   return (
-    <section className="bg-[#FAF8F4] py-28">
+    <section id="inspirasi" className="bg-[#FAF8F4] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-20 text-center">
-          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
-            Lookbook
-          </span>
+        <div className="mb-12 flex flex-col gap-5 sm:mb-14 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-2xl">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+              Moodboard
+            </span>
 
-          <h2 className="mt-4 text-5xl font-bold text-[#17324D]">
-            Inspiration Gallery
-          </h2>
+            <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+              Inspirasi untuk koleksi berikutnya.
+            </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-gray-500">
-            Jelajahi koleksi kain premium dan berbagai inspirasi
-            penggunaan kain untuk fashion, seragam, batik,
-            interior, hingga kebutuhan garment.
-          </p>
+            <p className="mt-5 max-w-xl leading-7 text-gray-600">
+              Referensi gaya dari Unsplash untuk membantu membayangkan karakter
+              bahan dalam sebuah tampilan. Gambar merupakan inspirasi, bukan
+              foto stok kain.
+            </p>
+          </div>
+          <Link
+            href="https://www.instagram.com/allmakind/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-[#17324D]/15 bg-white px-5 py-3 text-sm font-semibold text-[#17324D] transition hover:border-[#17324D]"
+          >
+            Ikuti @allmakind <ArrowUpRight size={16} />
+          </Link>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -30,15 +41,6 @@ export default function Gallery() {
             />
           ))}
         </div>
-
-        {/* <div className="mt-16 text-center">
-          <Link
-            href="/gallery"
-            className="rounded-full border px-8 py-4 font-semibold"
-          >
-            View All Gallery
-          </Link>
-        </div> */}
       </div>
     </section>
   );

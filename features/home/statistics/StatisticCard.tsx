@@ -6,16 +6,16 @@ interface Props {
 
 export default function StatisticCard({ item }: Props) {
   return (
-    <div className="rounded-3xl border bg-white p-8 shadow-sm">
-      <h2 className="text-5xl font-bold text-[#17324D]">
+    <div className="rounded-[24px] border border-[#17324D]/10 bg-white p-6 shadow-sm sm:p-7">
+      <h2 className="font-heading text-3xl font-medium tracking-tight text-[#17324D] sm:text-4xl">
         {item.value}
       </h2>
 
-      <h3 className="mt-4 text-xl font-semibold">
+      <h3 className="mt-5 text-sm font-semibold text-[#17324D]">
         {item.title}
       </h3>
 
-      <p className="mt-2 text-gray-500">
+      <p className="mt-2 text-sm leading-6 text-gray-500">
         {item.description}
       </p>
     </div>

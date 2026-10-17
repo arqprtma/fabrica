@@ -1,48 +1,44 @@
 import Link from "next/link";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-} from "lucide-react";
+import { Phone } from "lucide-react";
 
 import { FaInstagram } from "react-icons/fa6";
 
 const quickLinks = [
-  { name: "Home", href: "/" },
-  { name: "Categories", href: "#categories" },
-  // { name: "Products", href: "#products" },
-  // { name: "Gallery", href: "#gallery" },
-  // { name: "Contact", href: "#contact" },
+  { name: "Beranda", href: "/" },
+  { name: "Kategori kain", href: "#kategori" },
+  { name: "Tentang Vichra", href: "#tentang" },
+  { name: "Inspirasi", href: "#inspirasi" },
+  { name: "Kontak", href: "#kontak" },
 ];
 
-const categories = [
-  "Cotton",
-  "Linen",
-  "Satin",
-  "Rayon",
-];
+const categories = ["Polyester", "Katun", "Rayon"];
 
 export default function Footer() {
   return (
     <footer className="bg-[#17324D] text-white">
       <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-16 lg:grid-cols-4">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <h2 className="text-3xl font-bold">
-              Fabrica
+              Vichra
             </h2>
 
-            <p className="mt-6 leading-8 text-gray-300">
-              Premium fabric supplier untuk fashion,
-              butik, garment, konveksi, dan kebutuhan
-              tekstil di seluruh Indonesia.
+            <p className="mt-5 max-w-sm text-sm leading-7 text-gray-300">
+              Vichra, sales tekstil allmakind. Temukan pilihan polyester,
+              katun, dan rayon untuk kebutuhan koleksi Anda.
             </p>
 
-            <div className="mt-8 flex gap-4">
-              <Link href="#">
-                <FaInstagram />
+            <div className="mt-6">
+              <Link
+                href="https://www.instagram.com/allmakind/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram allmakind"
+                className="inline-flex items-center gap-2 text-sm text-gray-300 transition hover:text-white"
+              >
+                <FaInstagram size={17} />
+                @allmakind
               </Link>
             </div>
           </div>
@@ -50,7 +46,7 @@ export default function Footer() {
           {/* Menu */}
           <div>
             <h3 className="text-xl font-semibold">
-              Quick Links
+              Jelajahi
             </h3>
 
             <div className="mt-6 flex flex-col gap-4">
@@ -69,13 +65,13 @@ export default function Footer() {
           {/* Category */}
           <div>
             <h3 className="text-xl font-semibold">
-              Categories
+              Kategori
             </h3>
 
             <div className="mt-6 flex flex-col gap-4">
               {categories.map((item) => (
                 <Link
-                  href="#"
+                  href={`/katalog?kategori=${encodeURIComponent(item)}`}
                   key={item}
                   className="text-gray-300 hover:text-white"
                 >
@@ -88,58 +84,41 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-xl font-semibold">
-              Contact
+              Hubungi
             </h3>
 
             <div className="mt-6 space-y-5 text-gray-300">
-              <div className="flex gap-3">
-                <MapPin className="mt-1 h-5 w-5" />
-
-                <span>
-                  Jakarta, Indonesia
-                </span>
-              </div>
-
-              <div className="flex gap-3">
+              <a
+                href="https://wa.me/6281953437411"
+                target="_blank"
+                rel="noreferrer"
+                className="flex gap-3 transition hover:text-white"
+              >
                 <Phone className="mt-1 h-5 w-5" />
 
-                <span>+62 819-534-37411</span>
-              </div>
+                <span>+62 819-534-37411 · WhatsApp</span>
+              </a>
 
-              <div className="flex gap-3">
-                <Mail className="mt-1 h-5 w-5" />
-
-                <span>hello@fabrica.id</span>
-              </div>
-
-              <div className="flex gap-3">
-                <Clock className="mt-1 h-5 w-5" />
-
-                <span>
-                  Mon - Sat
-                  <br />
-                  08.00 - 17.00 WIB
-                </span>
-              </div>
+              <a
+                href="https://www.instagram.com/allmakind/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex gap-3 transition hover:text-white"
+              >
+                <FaInstagram className="mt-1 h-5 w-5" />
+                <span>@allmakind</span>
+              </a>
             </div>
           </div>
         </div>
 
         <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 text-sm text-gray-400 lg:flex-row">
           <p>
-            © {new Date().getFullYear()} Fabrica.
+            © {new Date().getFullYear()} Vichra.
             All rights reserved.
           </p>
 
-          <div className="flex gap-8">
-            <Link href="#">
-              Privacy Policy
-            </Link>
-
-            <Link href="#">
-              Terms of Service
-            </Link>
-          </div>
+          <p>Sales tekstil untuk kebutuhan fashion & produksi.</p>
         </div>
       </div>
     </footer>

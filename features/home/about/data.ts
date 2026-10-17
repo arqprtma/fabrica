@@ -1,15 +1,9 @@
 export const about = {
   name: "Vichra",
-  role: "Fabric Sales Consultant",
+  role: "Sales Tekstil | allmakind",
 
   description:
-    "Saya membantu butik, garment, konveksi, fashion designer, hingga UMKM mendapatkan kain berkualitas dengan harga terbaik serta pelayanan yang cepat dan profesional.",
+    "Saya membantu butik, garment, konveksi, dan brand fashion mengenal pilihan kain polyester, katun, dan rayon dari allmakind. Ceritakan kebutuhan Anda, lalu kita diskusikan bahan yang paling sesuai.",
 
-  experience: "15+ Tahun Pengalaman",
-
-  customers: "1000+ Pelanggan",
-
-  city: "Jakarta, Indonesia",
-
-  image: "/images/profile/profile.webp",
+  image: "/images/profile/profile.jpeg",
 };
