@@ -8,11 +8,11 @@ export default function FeaturedProducts() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 flex items-end justify-between">
           <div>
-            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
+            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B78A52]">
               Featured
             </span>
 
-            <h2 className="mt-4 text-5xl font-bold text-[#17324D]">
+            <h2 className="mt-4 text-5xl font-bold text-[#5A3825]">
               Featured Collection
             </h2>
 

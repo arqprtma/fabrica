@@ -3,14 +3,14 @@ import { statistics } from "./data";
 
 export default function Statistics() {
   return (
-    <section className="bg-[#FAF8F4] py-20 sm:py-24">
+    <section className="bg-[#F7F1E8] py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 max-w-2xl sm:mb-14">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#94633B]">
             Cara kerja Vichra
           </span>
 
-          <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+          <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#5A3825] sm:text-5xl">
             Pilih bahan dengan lebih yakin.
           </h2>
 

@@ -28,7 +28,7 @@ export default function SortDropdown({
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-[#17324D]"
+      className="rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none transition focus:border-[#5A3825]"
     >
       {options.map((item) => (
         <option key={item.value} value={item.value}>

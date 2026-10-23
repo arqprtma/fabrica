@@ -22,7 +22,7 @@ export default function SearchBar({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder="Cari nama kain..."
-        className="h-14 w-full rounded-2xl border border-gray-200 bg-white pl-14 pr-4 outline-none transition focus:border-[#17324D]"
+        className="h-14 w-full rounded-2xl border border-gray-200 bg-white pl-14 pr-4 outline-none transition focus:border-[#5A3825]"
       />
     </div>
   );

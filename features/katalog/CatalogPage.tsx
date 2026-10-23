@@ -60,13 +60,13 @@ export default function CatalogPage({
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#FAF8F4] py-20 sm:py-24">
+      <section className="bg-[#F7F1E8] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#94633B]">
             Vichra · allmakind
           </span>
 
-          <h1 className="mt-5 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+          <h1 className="mt-5 font-heading text-4xl font-medium tracking-[-0.035em] text-[#5A3825] sm:text-5xl">
             Koleksi kain pilihan
           </h1>
 

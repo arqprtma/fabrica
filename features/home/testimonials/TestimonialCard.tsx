@@ -33,7 +33,7 @@ export default function TestimonialCard({ testimonial }: Props) {
         />
 
         <div>
-          <h4 className="font-bold text-[#17324D]">
+          <h4 className="font-bold text-[#5A3825]">
             {testimonial.name}
           </h4>
 

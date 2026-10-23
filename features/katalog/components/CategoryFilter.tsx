@@ -20,7 +20,7 @@ export default function CategoryFilter({
           className={`rounded-full px-5 py-2 text-sm font-medium transition
           ${
             selected === category
-              ? "bg-[#17324D] text-white"
+              ? "bg-[#5A3825] text-white"
               : "bg-gray-100 hover:bg-gray-200"
           }`}
         >

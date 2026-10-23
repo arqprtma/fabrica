@@ -43,7 +43,7 @@ export default function Navbar() {
           <Link
             href="https://wa.me/6281953437411"
             target="_blank"
-            className="hidden rounded-full bg-[#17324D] px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 hover:bg-[#22486c] lg:block"
+            className="hidden rounded-full bg-[#5A3825] px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 hover:bg-[#765239] lg:block"
           >
             Chat WhatsApp
           </Link>

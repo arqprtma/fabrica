@@ -7,7 +7,7 @@ interface Props {
 export default function ProductInfo({ product }: Props) {
   return (
     <div>
-      <span className="rounded-full bg-[#17324D]/10 px-4 py-2 text-sm font-medium text-[#17324D]">
+      <span className="rounded-full bg-[#5A3825]/10 px-4 py-2 text-sm font-medium text-[#5A3825]">
         {product.category}
       </span>
 
@@ -23,7 +23,7 @@ export default function ProductInfo({ product }: Props) {
         href={`https://wa.me/6281953437411?text=${encodeURIComponent(`Halo Vichra, saya tertarik dengan ${product.name}. Bisa minta detail varian, harga, dan ketersediaannya?`)}`}
         target="_blank"
         rel="noreferrer"
-        className="mt-8 inline-flex rounded-full bg-[#17324D] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#24486d]"
+        className="mt-8 inline-flex rounded-full bg-[#5A3825] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#765239]"
       >
         Tanya detail via WhatsApp
       </a>

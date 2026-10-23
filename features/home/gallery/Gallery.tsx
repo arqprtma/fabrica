@@ -5,15 +5,15 @@ import { gallery } from "./data";
 
 export default function Gallery() {
   return (
-    <section id="inspirasi" className="bg-[#FAF8F4] py-20 sm:py-28">
+    <section id="inspirasi" className="bg-[#F7F1E8] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex flex-col gap-5 sm:mb-14 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#94633B]">
               Moodboard
             </span>
 
-            <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+            <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#5A3825] sm:text-5xl">
               Inspirasi untuk koleksi berikutnya.
             </h2>
 
@@ -27,7 +27,7 @@ export default function Gallery() {
             href="https://www.instagram.com/allmakind/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-[#17324D]/15 bg-white px-5 py-3 text-sm font-semibold text-[#17324D] transition hover:border-[#17324D]"
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-[#5A3825]/15 bg-white px-5 py-3 text-sm font-semibold text-[#5A3825] transition hover:border-[#5A3825]"
           >
             Ikuti @allmakind <ArrowUpRight size={16} />
           </Link>

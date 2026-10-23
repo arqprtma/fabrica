@@ -34,7 +34,7 @@ export default function ProductGallery({
             onClick={() => setSelectedImage(image)}
             className={`relative aspect-square overflow-hidden rounded-xl border-2 ${
               image === selectedImage
-                ? "border-[#17324D]"
+                ? "border-[#5A3825]"
                 : "border-gray-200"
             }`}
           >

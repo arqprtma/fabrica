@@ -8,7 +8,7 @@ interface Props {
 export default function GalleryCard({ item }: Props) {
   return (
     <div className="group overflow-hidden rounded-3xl">
-      <div className="relative h-80 overflow-hidden rounded-[24px] bg-[#E7E0D4] sm:h-96">
+      <div className="relative h-80 overflow-hidden rounded-[24px] bg-[#E7D9C6] sm:h-96">
         <Image
           src={item.image}
           alt={`${item.title} — inspirasi gaya ${item.category}`}

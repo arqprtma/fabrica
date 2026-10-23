@@ -31,7 +31,7 @@ export default function ProductCard({
       {/* Content */}
       <div className="space-y-4 p-6">
         <div>
-          <h3 className="text-xl font-semibold text-[#17324D]">
+          <h3 className="text-xl font-semibold text-[#5A3825]">
             {product.name}
           </h3>
 
@@ -40,11 +40,11 @@ export default function ProductCard({
           </p>
         </div>
 
-        <div className="flex items-center justify-between border-t border-[#17324D]/10 pt-4">
+        <div className="flex items-center justify-between border-t border-[#5A3825]/10 pt-4">
           <span className="text-xs text-gray-500">Tanya varian & ketersediaan</span>
           <Link
             href={`/katalog/${product.slug}`}
-            className="flex items-center gap-2 text-sm font-semibold text-[#17324D] transition group-hover:gap-3"
+            className="flex items-center gap-2 text-sm font-semibold text-[#5A3825] transition group-hover:gap-3"
           >
             Selengkapnya
             <ArrowRight size={18} />

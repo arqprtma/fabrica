@@ -20,7 +20,7 @@ export default function ProductCard({ product }: Props) {
       </div>
 
       <div className="space-y-4 p-6">
-        <span className="rounded-full bg-[#17324D]/10 px-3 py-1 text-sm font-medium text-[#17324D]">
+        <span className="rounded-full bg-[#5A3825]/10 px-3 py-1 text-sm font-medium text-[#5A3825]">
           {product.category}
         </span>
 
@@ -29,7 +29,7 @@ export default function ProductCard({ product }: Props) {
         </h3>
 
         <div className="flex items-center justify-between">
-          <p className="text-2xl font-bold text-[#17324D]">
+          <p className="text-2xl font-bold text-[#5A3825]">
             Rp {product.price.toLocaleString("id-ID")}
           </p>
 
@@ -49,7 +49,7 @@ export default function ProductCard({ product }: Props) {
 
           <Link
             href={`/katalog/${product.id}`}
-            className="flex items-center gap-2 font-semibold text-[#17324D]"
+            className="flex items-center gap-2 font-semibold text-[#5A3825]"
           >
             Detail
 

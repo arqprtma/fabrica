@@ -17,10 +17,10 @@ const stats = [
 
 export default function HeroStats() {
   return (
-    <div className="mt-12 grid grid-cols-3 gap-4 border-t border-[#17324D]/10 pt-6 sm:gap-8">
+    <div className="mt-12 grid grid-cols-3 gap-4 border-t border-[#5A3825]/10 pt-6 sm:gap-8">
       {stats.map((item) => (
         <div key={item.label}>
-          <h3 className="font-heading text-2xl font-medium tracking-tight text-[#17324D] sm:text-3xl">
+          <h3 className="font-heading text-2xl font-medium tracking-tight text-[#5A3825] sm:text-3xl">
             {item.value}
           </h3>
 

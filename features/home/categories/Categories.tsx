@@ -7,11 +7,11 @@ export default function Categories() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex flex-col gap-5 sm:mb-16 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#94633B]">
               Koleksi kain
             </span>
 
-            <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
+            <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#5A3825] sm:text-5xl">
               Pilihan kain untuk setiap koleksi.
             </h2>
 

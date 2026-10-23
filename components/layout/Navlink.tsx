@@ -21,14 +21,14 @@ export default function NavLink({
       className={clsx(
         "relative py-2 text-sm font-medium transition-all duration-300",
         pathname === href
-          ? "text-[#17324D]"
-          : "text-gray-600 hover:text-[#17324D]"
+          ? "text-[#5A3825]"
+          : "text-gray-600 hover:text-[#5A3825]"
       )}
     >
       {children}
 
       {pathname === href && (
-        <span className="absolute -bottom-1 left-0 h-[2px] w-full rounded-full bg-[#C8A96A]" />
+        <span className="absolute -bottom-1 left-0 h-[2px] w-full rounded-full bg-[#B78A52]" />
       )}
     </Link>
   );

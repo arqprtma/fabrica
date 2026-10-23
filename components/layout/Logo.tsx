@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <Link href="/" className="flex items-center gap-3">
-      <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#17324D] text-lg font-bold text-white shadow-lg">
+      <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#5A3825] text-lg font-bold text-white shadow-lg">
         V
       </div>
 

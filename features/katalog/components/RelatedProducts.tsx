@@ -29,11 +29,11 @@ console.log(products);
   return (
     <section className="mt-28">
       <div className="mb-10">
-        <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A96A]">
+        <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B78A52]">
           Recommendation
         </span>
 
-        <h2 className="mt-3 text-4xl font-bold text-[#17324D]">
+        <h2 className="mt-3 text-4xl font-bold text-[#5A3825]">
           You May Also Like
         </h2>
 
