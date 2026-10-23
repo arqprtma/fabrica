@@ -96,9 +96,6 @@ export default function MobileMenu() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D7B785]">
               Butuh bantuan memilih kain?
             </p>
-            <p className="mt-2 text-sm leading-6 text-white/75">
-              Tanya langsung tentang polyester, katun, dan rayon.
-            </p>
             <Link
               href="https://wa.me/6281953437411"
               target="_blank"

@@ -17,12 +17,13 @@ export default function ProductGallery({
   return (
     <div className="space-y-4">
       {/* Main Image */}
-      <div className="relative aspect-square overflow-hidden rounded-3xl border bg-gray-100">
+      <div className="relative mx-auto aspect-[9/16] w-full overflow-hidden rounded-3xl border bg-[#F2E9DB]">
         <Image
           src={selectedImage}
           alt={name}
           fill
-          className="object-cover transition duration-300 hover:scale-105"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="object-contain"
         />
       </div>
 
