@@ -1,3 +1,5 @@
+import { products } from "@/features/katalog/data/products";
+
 export interface Statistic {
   title: string;
   value: string;
@@ -7,8 +9,8 @@ export interface Statistic {
 export const statistics: Statistic[] = [
   {
     title: "Kategori pilihan",
-    value: "03",
-    description: "Polyester, katun, dan rayon",
+    value: String(products.length).padStart(2, "0"),
+    description: "Koleksi kain dengan pilihan warna",
   },
   {
     title: "Pendampingan",

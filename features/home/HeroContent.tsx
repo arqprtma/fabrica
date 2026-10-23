@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HeroStats from "./HeroStats";
+import { products } from "@/features/katalog/data/products";
 
 export default function HeroContent() {
   return (
@@ -14,18 +15,18 @@ export default function HeroContent() {
       </h1>
 
       <p className="mt-6 max-w-xl text-base leading-8 text-gray-600 sm:text-lg">
-        Kenali pilihan polyester, katun, dan rayon bersama Vichra — sales
-        tekstil allmakind yang siap membantu Anda mencocokkan bahan dengan
-        kebutuhan koleksi maupun produksi.
+        Jelajahi berbagai koleksi kain Vichra — sales tekstil allmakind yang
+        siap membantu Anda menemukan pilihan warna dan detail untuk kebutuhan
+        koleksi maupun produksi.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-2">
-        {["Polyester", "Katun", "Rayon"].map((fabric) => (
+        {products.slice(0, 3).map((product) => (
           <span
-            key={fabric}
+            key={product.id}
             className="rounded-full border border-[#17324D]/10 bg-white/70 px-4 py-2 text-sm font-medium text-[#17324D]"
           >
-            {fabric}
+            {product.name}
           </span>
         ))}
       </div>

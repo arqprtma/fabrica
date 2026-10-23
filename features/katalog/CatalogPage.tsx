@@ -71,8 +71,9 @@ export default function CatalogPage({
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600">
-            Jelajahi polyester, katun, dan rayon. Hubungi Vichra untuk
-            menanyakan detail varian, harga, dan ketersediaan terbaru.
+            Jelajahi koleksi kain dan pilihan warna yang tersedia. Hubungi
+            Vichra untuk menanyakan detail varian, harga, dan ketersediaan
+            terbaru.
           </p>
         </div>
       </section>

@@ -1,10 +1,12 @@
+import { products } from "@/features/katalog/data/products";
+
 const stats = [
   {
     value: "1:1",
     label: "Diskusi personal",
   },
   {
-    value: "03",
+    value: String(products.length).padStart(2, "0"),
     label: "Kategori kain",
   },
   {

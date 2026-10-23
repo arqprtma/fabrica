@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 
 import { FaInstagram } from "react-icons/fa6";
+import { products } from "@/features/katalog/data/products";
 
 const quickLinks = [
   { name: "Beranda", href: "/" },
@@ -10,8 +11,6 @@ const quickLinks = [
   { name: "Inspirasi", href: "#inspirasi" },
   { name: "Kontak", href: "#kontak" },
 ];
-
-const categories = ["Polyester", "Katun", "Rayon"];
 
 export default function Footer() {
   return (
@@ -25,8 +24,8 @@ export default function Footer() {
             </h2>
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-gray-300">
-              Vichra, sales tekstil allmakind. Temukan pilihan polyester,
-              katun, dan rayon untuk kebutuhan koleksi Anda.
+              Vichra, sales tekstil allmakind. Temukan berbagai koleksi kain
+              dan pilihan warna untuk kebutuhan koleksi Anda.
             </p>
 
             <div className="mt-6">
@@ -69,13 +68,13 @@ export default function Footer() {
             </h3>
 
             <div className="mt-6 flex flex-col gap-4">
-              {categories.map((item) => (
+              {products.map((product) => (
                 <Link
-                  href={`/katalog?kategori=${encodeURIComponent(item)}`}
-                  key={item}
+                  href={`/katalog?kategori=${encodeURIComponent(product.category)}`}
+                  key={product.id}
                   className="text-gray-300 hover:text-white"
                 >
-                  {item}
+                  {product.name}
                 </Link>
               ))}
             </div>

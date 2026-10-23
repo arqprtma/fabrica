@@ -23,7 +23,11 @@ export default function ProductDetailPage({ slug }: Props) {
         <Breadcrumb productName={product.name} />
 
         <div className="grid gap-16 lg:grid-cols-2">
-          <ProductGallery images={product.image} name={product.name} />
+          <ProductGallery
+            key={product.slug}
+            images={product.image}
+            name={product.name}
+          />
 
           <ProductInfo product={product} />
         </div>

@@ -12,7 +12,7 @@ export default function ProductGallery({
   images,
   name,
 }: Props) {
-  const [selectedImage, setSelectedImage] = useState(images[0]);
+  const [selectedImage, setSelectedImage] = useState(images[1] ?? images[0]);
 
   return (
     <div className="space-y-4">

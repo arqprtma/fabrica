@@ -8,17 +8,16 @@ export default function Categories() {
         <div className="mb-12 flex flex-col gap-5 sm:mb-16 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9C7B43]">
-              Pilihan material
+              Koleksi kain
             </span>
 
             <h2 className="mt-4 font-heading text-4xl font-medium tracking-[-0.035em] text-[#17324D] sm:text-5xl">
-              Tiga bahan, banyak kemungkinan.
+              Pilihan kain untuk setiap koleksi.
             </h2>
 
             <p className="mt-5 max-w-2xl leading-7 text-gray-600">
-              Mulai dari bahan yang nyaman untuk sehari-hari hingga pilihan
-              dengan karakter jatuh yang elegan. Pilih kategori, lalu diskusikan
-              detailnya bersama Vichra.
+              Jelajahi koleksi kain dan pilihan warna yang tersedia. Pilih
+              koleksi untuk melihat detailnya di katalog.
             </p>
           </div>
         </div>

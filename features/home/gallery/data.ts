@@ -3,20 +3,20 @@ import { GalleryItem } from "./types";
 export const gallery: GalleryItem[] = [
   {
     id: 1,
-    title: "Tekstur Anyaman Katun",
-    image: "/images/fabrics/cotton-weave.svg",
-    category: "Katun",
+    title: "Pilihan Warna Sorona",
+    image: "/images/categories/sorona-colors.jpeg",
+    category: "Sorona",
   },
   {
     id: 2,
-    title: "Detail Kain Polyester",
-    image: "/images/categories/polyester.webp",
-    category: "Polyester",
+    title: "Koleksi Airmax EZ Twill",
+    image: "/images/categories/airmax-ez-twill.jpeg",
+    category: "Airmax EZ Twill",
   },
   {
     id: 3,
-    title: "Jatuh Lembut Kain Rayon",
-    image: "/images/fabrics/rayon-drape.svg",
-    category: "Rayon",
+    title: "Koleksi Melange Wool",
+    image: "/images/categories/melange-wool.jpeg",
+    category: "Melange Wool",
   },
 ];

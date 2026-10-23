@@ -10,13 +10,13 @@ interface Props {
 export default function CategoryCard({ category }: Props) {
   return (
     <Link
-      href={`/katalog?kategori=${category.name}`}
+      href={`/katalog?kategori=${encodeURIComponent(category.name)}`}
       className="group overflow-hidden rounded-[28px] border border-[#17324D]/10 bg-[#FAF8F4] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
       <div className="relative h-72 overflow-hidden bg-[#E7E0D4]">
         <Image
           src={category.image}
-          alt={`Inspirasi gaya berbahan ${category.name.toLowerCase()}`}
+          alt={`Koleksi ${category.name}`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105"

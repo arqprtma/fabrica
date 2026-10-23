@@ -6,8 +6,8 @@ export default function HeroImage() {
       <div className="absolute -right-5 -top-5 h-36 w-36 rounded-full border border-[#C8A96A]/40 sm:-right-8 sm:-top-8 sm:h-48 sm:w-48" />
       <div className="relative h-[440px] overflow-hidden rounded-[180px_180px_28px_28px] bg-[#E7E0D4] shadow-2xl shadow-[#17324D]/15 sm:h-[600px]">
         <Image
-          src="/images/categories/polyester.webp"
-          alt="Close-up tekstur anyaman kain polyester"
+          src="/images/hero/hero.webp"
+          alt=""
           fill
           priority
           sizes="(max-width: 1024px) 100vw, 540px"
